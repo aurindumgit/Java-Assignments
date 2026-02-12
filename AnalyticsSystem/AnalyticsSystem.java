@@ -10,6 +10,7 @@
 //int getNumberOfActionRegisteredButNotSentToAnalyticsStore()
 //getTotalNumberOfLoggedActions()
 //List<ActionEnum> getMostFrequentlyUsedActions()
+package AnalyticsSystem;
 
 import java.util.*;
 
