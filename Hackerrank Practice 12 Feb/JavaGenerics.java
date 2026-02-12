@@ -13,6 +13,8 @@
 
 
 // import java.io.IOException;
+
+
 import java.lang.reflect.Method;
 
 class Printer
@@ -27,9 +29,7 @@ class Printer
 }
 
 public class JavaGenerics {
-
-
-    public static void main( String args[] ) {
+        public static void main( String args[] ) {
         Printer myPrinter = new Printer();
         Integer[] intArray = { 1, 2, 3 };
         String[] stringArray = {"Hello", "World"};
