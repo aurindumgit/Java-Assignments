@@ -30,7 +30,8 @@
 
 import java.util.*;
 
-class Solution {
+class Java2dArray {
+    
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             int[][] arr = new int[6][6];
