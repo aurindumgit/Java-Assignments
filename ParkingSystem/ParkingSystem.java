@@ -5,7 +5,7 @@ import java.util.*;
 class ParkingLot {
 
     static int totalVehiclesParked = 0;
-    static int maxSlots = 3;
+    static int maxSlots = 4;
 
     Map<String, Vehicle> parkedVehicles = new HashMap<>();
     Queue<Vehicle> waitingQueue = new LinkedList<>();
