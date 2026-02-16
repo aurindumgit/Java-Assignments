@@ -1,0 +1,67 @@
+QUESTION 2
+
+Implement a GroceryReceipt class that extends GroceryReceiptBase for an e-commerce company’s billing software.
+
+Given:
+
+• A list of unique fruits with their prices (prices)
+• A list of unique fruits with their discounts (discounts)
+• A list of items purchased by a user and their quantities (shoppingList, may contain duplicates)
+
+Generate the final invoice with the format: item, price, total_price.
+
+• total_price is calculated as quantity × price, minus any applicable discount.
+
+• The invoice list should be sorted in ascending order by product name.
+
+GroceryReceipt class:
+
+• Implement the "GroceryReceipt" class that extends GroceryReceiptBase.
+
+• These properties are passed on instantiation:
+
+o prices – the list of fruits (String) and their prices (Double)
+
+o discounts – the list of discounts (Integer) for each item (String)
+
+• Implement a Calculate method.
+
+o It receives a list of fruits and quantities called shoppingList
+
+o It returns a list of fruit names (String), the original price per unit (Integer), and the total price after discounts (Double) for the items in the shopping list in ascending order by fruit name.
+
+Example
+
+prices = [["Banana", 10], ["Apple", 20], ["Orange", 5]]
+discounts = [["Orange", 10]]
+shoppingList = [["Banana", 5], ["Orange", 2], ["Orange", 1]]
+
+Invoice:
+
+Item Price total_price
+Banana 10 50
+Orange 5 13.5
+
+Normally, an Orange costs 5 per unit, but there is a 10% discount.
+For 3 units of Orange, the gross price is 15, less 10% is 13.5.
+Order them alphabetically and return [["Banana", 10, 50], ["Orange", 5, 13.5]].
+
+Function Description
+
+Create GroceryReceipt class by extending the GroceryReceiptBase abstract class.
+Implement a Calculate function to create invoices.
+The function should return the item name, quantity, and the total price after the discount for every item in the shopping list.
+
+Input Format For Custom Testing
+
+Sample Case 0
+
+Sample Input
+
+STDIN → FUNCTION
+
+3 → number of prices n = 3
+Apple 34 → [fruit, price per unit]
+Banana 14
+Orange 5
+3 → m = 3
